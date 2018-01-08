@@ -1,0 +1,9 @@
+{% extends "personal/header.html" %}
+{% block content %}
+        <h3><a href="/blog/{{Post.id}}">  {{ Post.main }}</a></h3>
+            <h6>{{Post.date}}</h6>
+<div class = "container">
+	{{ post.body|safe|linebreaks}}
+</div>
+<br><br>
+{% endblock %}
